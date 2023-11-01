@@ -1,0 +1,94 @@
+.desc_container{
+    width: 90%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.title_container{
+    justify-self: flex-start;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+}
+
+.desc_title{
+    
+    height: 0px;
+    color: #FF6060;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.desc_location{
+    color: #FF6060;
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+
+.desc_tags{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.user_info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.user_info p{
+    color:#FF6060;
+    justify-self: right;
+    margin-left: auto;
+    text-align: end;
+    font-size: 18px;
+    font-weight: 500;
+    width: 93px;
+}
+
+.desc_tags p{
+    background-color: #FF6060;
+    padding: 1px 15px;
+    color: white;
+    border-radius: 10px;
+    min-width: auto;
+    margin: 0px 15px;
+    margin-left: 0px;
+}
+
+.desc_user {
+    margin-top: 20px;
+}
+
+.desc_user img {
+    border-radius: 50%;
+    width: 100px;
+    justify-self: flex-end;
+    margin-left: auto;
+    margin-right: 0px;
+}
+
+.star-rating{
+    display: flex;
+    flex-direction: row;
+    width: 220px;
+    justify-content: space-evenly;
+    
+}
+
+.star-rating svg {
+    width: 30px;
+
+}
+
+.star-on {
+    color: #FF6060;
+}
+
+.star-off {
+    color: #b4b4b4;
+}

@@ -1,0 +1,34 @@
+.img_container{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    object-fit: cover;
+    height: 223px;
+    margin-top: 75px;
+    border-radius: 25px;
+}
+
+.img_container_h{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    object-fit: cover;
+    height: 415px;
+    margin-top: 75px;
+    border-radius: 25px;
+}
+
+img {
+    filter: brightness(70%);
+}
+
+.img_text{
+    color: white;
+    font-size: 48px;
+    position: relative;
+    top:-180px;
+    display: flex;
+    justify-content: center;
+}
