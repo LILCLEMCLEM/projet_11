@@ -40,3 +40,14 @@
     width: 50%;
     font-weight: 500;
 }
+
+@media all and (width < 400px) {
+    .card_container {
+        width: 250px;
+        height: 250px;
+    }
+    .card_container img {
+        width: 250px;
+        height: 250px;
+    }
+}

@@ -35,3 +35,22 @@ a.active {
     border-bottom-color: #FF6060;
     border-bottom: 2px solid;
 }
+
+@media all and (width < 570px) {
+    .header-container {
+        align-items: center;
+        flex-direction: column;
+        
+    }
+
+    .header-container>img {
+        
+        justify-self: center;
+        margin-left: auto;
+        margin-bottom: 20px;
+    }
+
+    .header-container >.navcontent {
+        margin-left: 0px;
+    }
+}

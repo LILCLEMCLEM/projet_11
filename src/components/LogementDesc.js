@@ -1,5 +1,4 @@
-import { faStar } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Depliants from "./depliants";
 import StarRating from "./starring";
 
 function LogementDesc({ source }) {
@@ -25,7 +24,10 @@ function LogementDesc({ source }) {
           </div>
         </div>
       </div>
-      <div className="desc_foot"></div>
+      <div className="desc_foot">
+        <Depliants nom="Description" detailSource={source.description} />
+        <Depliants nom="Equipements" detailSource={source.equipments} />
+      </div>
     </div>
   );
 }

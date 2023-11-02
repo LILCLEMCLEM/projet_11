@@ -18,9 +18,16 @@ svg {
     
 }
 
+.counter{
+    color: white;
+    position: relative;
+    top:370px;
+    right:47%
+}
+
 .fa-chevron-right {
     position: relative;
-    left:-75px;
+    left:-100px;
     top:170px;
     color: white;
 }
@@ -32,4 +39,29 @@ svg {
     top:170px;
     color: white;
     
+}
+
+@media all and (width < 620px) {
+    svg {
+        font-size: 35px;
+    }
+
+    .fa-chevron-left {
+        right:-27px;
+        top: 90px;
+    }
+
+    .fa-chevron-right {
+        left: -52px;
+        top:90px;
+    }
+
+    .img_preview {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .counter{
+        top:160px
+    }
 }

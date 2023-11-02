@@ -10,7 +10,6 @@ function LocationContainer() {
           <p className="card_title">{elem.title}</p>
         </a>
       ))}
-      ;
     </div>
   );
 }

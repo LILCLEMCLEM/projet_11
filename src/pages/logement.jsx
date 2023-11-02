@@ -5,6 +5,7 @@ import Media from "../components/MediaPlayer";
 import "../styles/Logement.css";
 import fetchData from "../utils/queryParams";
 import LogementDesc from "../components/LogementDesc";
+import FootContent from "../components/FootContent";
 
 function Logement() {
   const [searchParams] = useSearchParams();
@@ -21,6 +22,7 @@ function Logement() {
           <LogementDesc source={items} />
         ))}
       </div>
+      <FootContent />
     </div>
   );
 }

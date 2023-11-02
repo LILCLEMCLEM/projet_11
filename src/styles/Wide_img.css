@@ -32,3 +32,31 @@ img {
     display: flex;
     justify-content: center;
 }
+
+@media all and (width < 950px) {
+    .imgC{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .img_text{
+        top: -125px;
+        width: 80%;
+        font-size: 22px;
+    }
+}
+
+@media all and (width < 570px) {
+    .imgC{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .img_text{
+        text-align: center;
+        top: -125px;
+        width: 80%;
+        font-size: 18px;
+    }
+}

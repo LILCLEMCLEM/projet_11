@@ -19,6 +19,9 @@ function Media({ source }) {
         }
       />
       <img src={mediaList[index]} alt="img" className="img_preview"></img>
+      <p className="counter">
+        {index + 1}/{mediaList.length}
+      </p>
       <FontAwesomeIcon
         icon={faChevronRight}
         onClick={() =>

@@ -92,3 +92,87 @@
 .star-off {
     color: #b4b4b4;
 }
+
+@media all and (width < 630px) {
+    .desc_container {
+        flex-direction: column;
+    }
+
+    .desc_title {
+        font-size: 18px;
+    }
+
+    .desc_location {
+        font-size: 14px;
+        margin-top:25px
+    }
+
+    .title_container {
+        height: auto;
+    }
+
+    .desc_user {
+        margin-top: 0px;
+        justify-content: center;
+        
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
+    .desc_star {
+        align-self: center;
+
+    }
+
+    .desc_tags {
+        flex-wrap: wrap;
+    }
+
+    .desc_tags >p {
+        font-size: 10px;
+        border-radius: 8px;
+        padding-top:5px ;
+        margin-bottom: 10px;
+        height: 18px;
+        vertical-align: middle;
+        
+    }
+
+    .star-rating{
+        display: flex;
+        flex-direction: row;
+        width: 140px;
+        justify-content: space-evenly;
+        
+    }
+
+    .star-rating svg {
+        width: 20px;
+    
+    }
+
+    .user_info {
+        justify-content:center;
+        margin-left: auto;
+    }
+
+    .desc_name {
+        justify-self: flex-end;
+        margin-right: auto;
+    }
+
+    .desc_user img {
+        justify-self: flex-start;
+        margin: auto;
+    }
+
+    .user_info >p {
+        
+        margin-right: 15px;
+    }
+
+    .user_info > img {
+        width: 64px;
+        height: 64px;
+    }
+}
