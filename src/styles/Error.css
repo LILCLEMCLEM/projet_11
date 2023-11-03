@@ -1,0 +1,49 @@
+p {
+    color: #FF6060;
+}
+
+.wide_text {
+    
+    font-size: 288px;
+    margin-top: 100px;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+.align_content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.error_text {
+    font-size: 36px;
+
+}
+
+.back_menu {
+    margin: 0px;
+    font-size: 18px;
+    margin-top: 60px;
+    text-decoration: underline;
+}
+
+@media all and (width < 920px) {
+    .wide_text {
+        margin-top: 70px;
+        font-size: 130px;
+    }
+
+    .error_text {
+        margin-top: 70px;
+        width: 75%;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .back_menu {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+}
+

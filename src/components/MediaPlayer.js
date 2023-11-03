@@ -12,22 +12,27 @@ function Media({ source }) {
   });
   return (
     <div className="preview_container">
-      <FontAwesomeIcon
-        icon={faChevronLeft}
-        onClick={() =>
-          updateIndex(index - 1 < 0 ? mediaList.length - 1 : index - 1)
-        }
-      />
+      {mediaList.length > 1 ? (
+        <FontAwesomeIcon
+          icon={faChevronLeft}
+          onClick={() =>
+            updateIndex(index - 1 < 0 ? mediaList.length - 1 : index - 1)
+          }
+        />
+      ) : null}
+
       <img src={mediaList[index]} alt="img" className="img_preview"></img>
       <p className="counter">
-        {index + 1}/{mediaList.length}
+        {mediaList.length > 1 ? `${index + 1}/${mediaList.length}` : null}
       </p>
-      <FontAwesomeIcon
-        icon={faChevronRight}
-        onClick={() =>
-          updateIndex(index + 1 >= mediaList.length ? 0 : index + 1)
-        }
-      />
+      {mediaList.length > 1 ? (
+        <FontAwesomeIcon
+          icon={faChevronRight}
+          onClick={() =>
+            updateIndex(index + 1 >= mediaList.length ? 0 : index + 1)
+          }
+        />
+      ) : null}
     </div>
   );
 }
