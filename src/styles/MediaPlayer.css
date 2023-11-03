@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     margin: auto;
+    margin-left: 20px;
     width: 95%;
 }
 
@@ -22,12 +23,12 @@ svg {
     color: white;
     position: relative;
     top:370px;
-    right:47%
+    right:44%
 }
 
 .fa-chevron-right {
     position: relative;
-    left:-100px;
+    left:-90px;
     top:170px;
     color: white;
 }
@@ -52,7 +53,7 @@ svg {
     }
 
     .fa-chevron-right {
-        left: -52px;
+        left: -47px;
         top:90px;
     }
 
