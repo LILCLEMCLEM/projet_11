@@ -2,7 +2,7 @@ import Header from "../components/Header";
 import data from "../data/logements.json";
 import { Navigate, useSearchParams } from "react-router-dom";
 import SlideShow from "../components/SlideShow";
-import "../styles/Logement.css";
+import "../styles/pages/Logement.css";
 import fetchData from "../utils/queryParams";
 import LogementDesc from "../components/LogementDesc";
 import FootContent from "../components/FootContent";

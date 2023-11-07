@@ -1,5 +1,5 @@
 import Logement from "../data/logements.json";
-import "../styles/LocationContainer.css";
+import "../styles/components/LocationContainer.css";
 
 function LocationCard() {
   return (

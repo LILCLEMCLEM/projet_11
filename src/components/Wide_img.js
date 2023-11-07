@@ -1,4 +1,4 @@
-import "../styles/Wide_img.css";
+import "../styles/components/Wide_img.css";
 
 function WideImg({ image_src, text, type }) {
   return (

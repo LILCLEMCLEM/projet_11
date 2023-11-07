@@ -1,4 +1,4 @@
-import "../styles/Error.css";
+import "../styles/pages/Error.css";
 
 function DisplayError() {
   return (

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../styles/MediaPlayer.css";
+import "../styles/components/SlideShow.css";
 import {
   faChevronLeft,
   faChevronRight,

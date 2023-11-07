@@ -1,6 +1,6 @@
 import Header from "../components/Header";
 import Collapse from "../components/Collapse";
-import "../styles/About.css";
+import "../styles/pages/About.css";
 import wide_image from "../assets/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png";
 import WideImg from "../components/Wide_img";
 import FootContent from "../components/FootContent";

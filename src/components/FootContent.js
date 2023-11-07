@@ -1,4 +1,4 @@
-import "../styles/Footer.css";
+import "../styles/components/Footer.css";
 import WLogo from "../assets/LOGO(1).png";
 
 function FootContent() {
