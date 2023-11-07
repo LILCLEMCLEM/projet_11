@@ -5,12 +5,11 @@ const StarRating = ({ rating }) => {
   return (
     <div className="star-rating">
       {[...Array(5)].map((star, index) => {
-        index += 1;
         return (
-          <div>
+          <div key={index}>
             <FontAwesomeIcon
               key={index}
-              className={index <= rating ? "star-on" : "star-off"}
+              className={index < rating ? "star-on" : "star-off"}
               icon={faStar}
             />
           </div>

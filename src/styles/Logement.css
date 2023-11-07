@@ -10,25 +10,29 @@
     margin-right: auto;
     display: flex;
     flex-direction: column;
-    height: 200px;
+    margin-bottom: 20px;
+    height: auto;
 }
 
 .desc_title{
     
-    height: 0px;
+    height: auto;
     color: #FF6060;
     font-size: 36px;
     font-weight: 500;
+    margin-bottom: 0px;
 }
 
 .desc_location{
     color: #FF6060;
     font-size: 18px;
     font-weight: 500;
+    margin-top: 0px;
     
 }
 
 .desc_tags{
+    text-align: center;
     display: flex;
     flex-direction: row;
     
@@ -93,6 +97,14 @@
     color: #b4b4b4;
 }
 
+@media all and (width < 800px ) and (width > 630px)  {
+    .desc_tags >p {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+}
+
 @media all and (width < 630px) {
     .desc_container {
         flex-direction: column;
@@ -104,7 +116,7 @@
 
     .desc_location {
         font-size: 14px;
-        margin-top:25px
+        margin-top:5px
     }
 
     .title_container {
@@ -126,6 +138,8 @@
 
     .desc_tags {
         flex-wrap: wrap;
+        padding: 15px;
+        padding-top: 5px;
     }
 
     .desc_tags >p {

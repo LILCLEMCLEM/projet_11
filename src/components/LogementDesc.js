@@ -1,4 +1,4 @@
-import Depliants from "./depliants";
+import Collapse from "./Collapse";
 import StarRating from "./starring";
 
 function LogementDesc({ source }) {
@@ -9,8 +9,8 @@ function LogementDesc({ source }) {
           <p className="desc_title">{source.title}</p>
           <p className="desc_location">{source.location}</p>
           <div className="desc_tags">
-            {source.tags.map((items) => (
-              <p>{items}</p>
+            {source.tags.map((items, index) => (
+              <p key={index}>{items}</p>
             ))}
           </div>
         </div>
@@ -25,8 +25,18 @@ function LogementDesc({ source }) {
         </div>
       </div>
       <div className="desc_foot">
-        <Depliants nom="Description" detailSource={source.description} />
-        <Depliants nom="Equipements" detailSource={source.equipments} />
+        <Collapse nom="Description">
+          <p>{source.description}</p>
+        </Collapse>
+        <Collapse nom="Equipements">
+          <ul className="equipments_list">
+            {source.equipments.map((item, index) => (
+              <li className="equipments_item" key={index}>
+                <p>{item}</p>
+              </li>
+            ))}
+          </ul>
+        </Collapse>
       </div>
     </div>
   );

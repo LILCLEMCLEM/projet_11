@@ -5,8 +5,8 @@ import {
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-function Media({ source }) {
-  let [index, updateIndex] = useState(0);
+function SlideShow({ source }) {
+  let [index, setIndex] = useState(0);
   const mediaList = source.map((element) => {
     return element;
   });
@@ -16,7 +16,7 @@ function Media({ source }) {
         <FontAwesomeIcon
           icon={faChevronLeft}
           onClick={() =>
-            updateIndex(index - 1 < 0 ? mediaList.length - 1 : index - 1)
+            setIndex(index - 1 < 0 ? mediaList.length - 1 : index - 1)
           }
         />
       ) : null}
@@ -29,7 +29,7 @@ function Media({ source }) {
         <FontAwesomeIcon
           icon={faChevronRight}
           onClick={() =>
-            updateIndex(index + 1 >= mediaList.length ? 0 : index + 1)
+            setIndex(index + 1 >= mediaList.length ? 0 : index + 1)
           }
         />
       ) : null}
@@ -37,4 +37,4 @@ function Media({ source }) {
   );
 }
 
-export default Media;
+export default SlideShow;
