@@ -138,8 +138,10 @@
 
     .desc_tags {
         flex-wrap: wrap;
-        padding: 15px;
+        
+        width: 100%;
         padding-top: 5px;
+        padding-bottom: 0;
     }
 
     .desc_tags >p {
@@ -155,8 +157,8 @@
     .star-rating{
         display: flex;
         flex-direction: row;
-        width: 140px;
-        justify-content: space-evenly;
+        width: 130px;
+        justify-content: space-between;
         
     }
 
@@ -173,6 +175,9 @@
     .desc_name {
         justify-self: flex-end;
         margin-right: auto;
+    }
+    .desc_user {
+        margin-top: -20px;
     }
 
     .desc_user img {

@@ -8,11 +8,12 @@
 
 
 }
-img {
+.header-container>img {
     justify-self: left;
     margin-right: auto;
 }
 .navcontent{
+    padding-top: 20px;
     justify-self: right;
     width: 350px;
     margin-left: auto;
@@ -36,21 +37,31 @@ a.active {
     border-bottom: 2px solid;
 }
 
-@media all and (width < 570px) {
+@media all and (width < 780px) {
     .header-container {
         align-items: center;
-        flex-direction: column;
+        width: 100%;
         
+        
+    }
+    .navcontent{
+        padding-top: 10px;
+        
+    }
+    a {
+        
+        font-size: 16px;
     }
 
     .header-container>img {
-        
+        width: 165px;
         justify-self: center;
-        margin-left: auto;
-        margin-bottom: 20px;
+        margin-left: 7%;
+        
     }
 
     .header-container >.navcontent {
+        
         margin-left: 0px;
     }
 }

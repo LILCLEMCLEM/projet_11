@@ -107,6 +107,7 @@ p.equipments_list {
     }
 
     .dep_container {
+        width: 95%;
         margin-top: 0px;
         margin-bottom: 20px;
         margin-right: 0px;
