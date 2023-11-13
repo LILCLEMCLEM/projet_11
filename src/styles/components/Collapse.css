@@ -87,6 +87,15 @@ p.equipments_list {
 }
 
 @media all and (width < 520px) {
+
+    .equipment_container{
+        margin-top: 5px;
+    }
+
+    .dep_detailed{
+        width: 96%;
+        top:-20px
+    }
     .desc_foot{
         flex-direction: column;
         margin: auto;
